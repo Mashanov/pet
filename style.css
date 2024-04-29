@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+    font-family: sh;
+}
+
+body {
+    background-color: cadetblue;
+    animation: color 9s infinite linear;
+}
+
+div#bottomMenu {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background: #35454e91;
+    text-align: center;
+    display: flex;
+}
+
+div#bottomMenu div {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: visible;
+    justify-content: space-evenly;
+}
+
+#pet {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.moneyBlock {
+    position: absolute;
+    width: 35%;
+    height: 40px;
+    background: #ffffff91;
+    z-index: 1;
+    border-radius: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#moneyText {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    letter-spacing: 1px;
+    color: #21cb21;
+    word-break: break-all;
+    height: 20px;
+    overflow: hidden;
+}
+
+.baks {
+    position: absolute;
+    top: 200px;
+    font-size: 250%;
+    color: #ffd254;
+    text-shadow: rgb(223, 123, 10) 1px 2px 1px;
+    transition: 1s;
+}
+
+.passiveText {
+    color: #fff;
+    top: 65px;
+    position: absolute;
+    text-align: center;
+    width: inherit;
+    text-shadow: #00000057 0 1px 1px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
+font {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: fit-content;
+}
+
+shop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to right, rgb(78, 205, 196), rgb(85, 98, 112));
+    transition: 1s;
+    overflow: auto;
+    z-index: 1;
+}
+
+upt {
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:-100%;
+    right:0;
+    top:0;
+    background:linear-gradient(to right, rgb(128, 128, 128), rgb(63, 173, 168));
+    transition:1s;
+    overflow:auto;
+    z-index: 1;
+}
+
+.NameSection {
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    font-size: 170%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: #fff;
+}
+
+.closeShop {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 200%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.moneyShopImage {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 80px;
+    left: 25px;
+}
+
+.moneyShopText {
+    position: absolute;
+    top: 85px;
+    left: 80px;
+    font-size: 130%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.section {
+    position: relative;
+    top: 130px;
+    width: 100%;
+    height: fit-content;
+    display: inline-block;
+    margin-bottom: 15px;
+    border-top: 1px solid #ffffff80;
+    border-bottom: 1px solid #ffffff80;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.blockBuy {
+    position: relative;
+    background: #ffffffc9;
+    border-radius: 15px;
+    width: 80%;
+    left: 10%;
+    height: auto;
+    margin-top: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.imageShop {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    float: left;
+}
+
+.buy {
+    position: absolute;
+    background: #32a332;
+    width: fit-content;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    top: 15px;
+    right: 10px;
+}
+
+#backgroundEducation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #0000009e;
+    z-index: 1;
+    top: 0;
+    display: none;
+}
+
+#educationMessage {
+    position: fixed;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+    width: 80%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+#manEducation {
+    width: 200px;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+#adsMan {
+    position: fixed;
+    right: 0;
+    bottom: -200px;
+    width: 120px;
+    height: 120px;
+    transition: 1s;
+    filter: drop-shadow(0 0 7px gold);
+}
+
+#adsMessage {
+    position: fixed;
+    bottom: -1000px;
+    background: #fff;
+    padding: 5px;
+    width: calc(100% - 130px);
+    border: 2px solid gold;
+    border-radius: 10px;
+    left: 10px;
+    box-shadow: 0 0 7px gold;
+    transition: 1s;
+}
+
+#adsMessage div {
+    position: relative;
+    color: #fff;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#mus {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+}
+
+#musClise {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    color: rgb(184, 75, 75);
+    font-size: 180%;
+}
+
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+}
+
+@font-face {
+    font-family: "sh";
+    src: url(sh.ttf) format("truetype");
+}
